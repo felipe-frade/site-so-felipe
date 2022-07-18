@@ -162,3 +162,13 @@ section.modal p::first-letter {
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 426px) {
+    section.modal article.active {
+        padding: 0px 10px;
+    }
+    section.modal article.text-lightbulb .parts {
+        max-width: 70vw;
+    ;
+    }
+}
