@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+ul ul {
+    padding-left: 30px;
+}
+
+.fade {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+:root {
+    --main-border-radius: 10px;
+    --main-length-perfil: 200px;
+    --main-color: #000;
+    --second-color: #FFDB15;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+main.second {
+    background-color: var(--second-color) !important;
+}
+
+section.content {
+    display: flex;
+    max-width: 90vw;
+    flex-wrap: wrap;
+    width: 600px;
+    justify-content: center;
+    transition: 1s;
+    opacity: 1;
+    z-index: 2;
+}
+
+div.items {
+    display: flex;
+    flex-grow: 2;
+    order: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+div.items button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background-color: var(--second-color);
+    border-radius: var(--main-border-radius);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+div.items button:hover {
+    background-color: #fff;
+}
+
+div.items button i {
+    color: var(--main-color);
+    transition: 1s;
+    transform: scale(1.5);
+}
+
+div.items button:hover i {
+    color: var(--second-color);
+}
+
+div.image {
+    display: flex;
+    flex-grow: 1;
+    order: 2;
+    min-width: var(--main-length-perfil);
+    min-height: var(--main-length-perfil);
+    max-width: var(--main-length-perfil);
+    max-height: var(--main-length-perfil);
+    overflow: hidden;
+    margin: 50px 0px;
+}
+
+div.box-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    flex-grow: 1;
+}
+
+div.box-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+
+i.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    color: #fff;
+    transform: scale(3);
+    z-index: 10;
+}
+i.active.close {
+    display: inline !important;
+}
