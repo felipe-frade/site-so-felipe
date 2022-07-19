@@ -110,6 +110,9 @@
                         <li>
                             Gosto de desafios;
                         </li>
+                        <li>
+                            Tenho bom domínio do inglês;
+                        </li>
                     </ul>
                 </div>
                 <div class="parts part-2">

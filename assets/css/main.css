@@ -54,8 +54,9 @@ section.content {
 
 div.items {
     display: flex;
+    flex-wrap: wrap;
     flex-grow: 2;
-    order: 1;
+    order: 2;
     justify-content: space-around;
     align-items: center;
     padding: 0px 50px;
@@ -71,6 +72,7 @@ div.items button {
     border-radius: var(--main-border-radius);
     width: 50px;
     height: 50px;
+    margin: 10px;
     cursor: pointer;
     transition: 1s;
 }
@@ -92,7 +94,7 @@ div.items button:hover i {
 div.image {
     display: flex;
     flex-grow: 1;
-    order: 2;
+    order: 1;
     min-width: var(--main-length-perfil);
     min-height: var(--main-length-perfil);
     max-width: var(--main-length-perfil);
